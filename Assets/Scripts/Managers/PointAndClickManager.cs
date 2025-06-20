@@ -4,7 +4,7 @@ using UnityEngine;
 public class PointAndClickManager : MonoBehaviour
 {
     [SerializeField] private float maxRayDistance;
-    public event Action<Vector3> OnClicked;
+    public event Action<Vector3, IClickable> OnClicked;
 
     private Camera _mainCamera;
     private RaycastHit hit;
@@ -27,7 +27,7 @@ public class PointAndClickManager : MonoBehaviour
             if (clickable == null) return; // If clickable is null, exit
 
             clickable.OnClicked(hit.point); // call the onclicked in clickable
-            OnClicked?.Invoke(hit.point); // invoke the onclicked event
+            OnClicked?.Invoke(hit.point, clickable); // invoke the onclicked event
         }
 
     }

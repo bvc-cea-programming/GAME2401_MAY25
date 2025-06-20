@@ -18,7 +18,7 @@ public class NPCInteractCommand : ICommand
     {
         if (!_isComplete)
         {
-            Debug.Log("Interact with terminal");
+            //Debug.Log("Interact with terminal");
             _targetInteractable?.Interact();
             _isComplete = true;
         }

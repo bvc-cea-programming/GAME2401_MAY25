@@ -40,7 +40,7 @@ public class NPCMoveToDestinationCommand : ICommand
 
     private void InitiateMovement()
     {
-        Debug.Log("Move to destination started " + _destination);
+       // Debug.Log("Move to destination started " + _destination);
         _agent.destination = _destination;
         _isMoving = true;
     }

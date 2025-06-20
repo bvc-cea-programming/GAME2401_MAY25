@@ -38,7 +38,7 @@ public class NPCWaitCommand : ICommand
 
     private void IntitiateWait()
     {
-        Debug.Log("Wait command started!");
+        //Debug.Log("Wait command started!");
         _timer = 0;
         _isTimerRunning = true;
     }
