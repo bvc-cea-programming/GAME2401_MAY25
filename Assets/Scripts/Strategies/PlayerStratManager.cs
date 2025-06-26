@@ -5,8 +5,10 @@ public class PlayerStratManager : MonoBehaviour
     [SerializeField] private PointAndClickManager pointAndClickManager;
     [SerializeField] private PlayerMover playerMover;
     [SerializeField] private PlayerBuilder playerBuilder;
+    [SerializeField] private PlayerTerminalInteractor terminalInteractor;
     public PlayerMover mPlayerMover => playerMover; // property only to get access to the ref
     public PlayerBuilder mPlayerBuilder => playerBuilder; 
+    public PlayerTerminalInteractor mTerminalInteractor => terminalInteractor;
 
     
     //Create references for the strategies
@@ -23,7 +25,7 @@ public class PlayerStratManager : MonoBehaviour
     {
         _playerMoveStrategy = new PlayerMoveStrategy(this);
         _playerBuildStrategy = new PlayerBuildStrategy(this);
-        _playerTerminalStrategy = new PlayerTerminalStretegy();
+        _playerTerminalStrategy = new PlayerTerminalStretegy(this);
     }
 
     private void OnEnable()

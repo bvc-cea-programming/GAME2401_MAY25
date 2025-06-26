@@ -748,6 +748,7 @@ GameObject:
   - component: {fileID: 523727067}
   - component: {fileID: 523727069}
   - component: {fileID: 523727070}
+  - component: {fileID: 523727071}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -820,6 +821,7 @@ MonoBehaviour:
   pointAndClickManager: {fileID: 1760206024}
   playerMover: {fileID: 523727067}
   playerBuilder: {fileID: 523727070}
+  terminalInteractor: {fileID: 523727071}
 --- !u!114 &523727070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -834,6 +836,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildPrefab: {fileID: 8373356199957450687, guid: 39d4f047cfaa34b758dee2c5cfa86f27, type: 3}
   buildMaxDistance: 5
+--- !u!114 &523727071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523727065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17542738d54af452fbcc120a1ff5a7b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &587953968
 GameObject:
   m_ObjectHideFlags: 0

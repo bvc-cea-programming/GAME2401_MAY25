@@ -9,4 +9,5 @@ public class Terminal : MonoBehaviour, IInteractable
         // when interacted, change the color to a random value.
         renderer.material.color = Random.ColorHSV();
     }
+
 }
